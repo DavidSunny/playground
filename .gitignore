@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules
+
+# Build generated
+build
+
+#  WebStorm/IntelliJ
+.idea
+modules.xml
+*.ipr
+
+# Logs
+npm-debug.log*
+
+# System Files
+*.DS_Store
