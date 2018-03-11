@@ -1,4 +1,4 @@
-## Traveling portfolio search DEMO app
+## React, Redux based Search app demo
 
 ### Preview
 
@@ -54,5 +54,4 @@ src
         -- common
         -- utils
         -- main.scss
-
 ```
