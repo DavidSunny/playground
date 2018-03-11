@@ -1,0 +1,16 @@
+{
+  "env": {
+    "development": {
+      "presets": ["env", "stage-2", "react", "flow"],
+      "plugins": ["react-hot-loader/babel", "flow-react-proptypes", "universal-import"]
+    },
+    "production": {
+      "presets": ["env", "stage-2", "react", "flow"],
+      "plugins": ["transform-flow-strip-types", "universal-import"]
+    },
+    "test": {
+      "presets": ["env", "react", "stage-2", "flow"],
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}

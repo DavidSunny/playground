@@ -1,0 +1,12 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "build", "node_modules"],
+  "verbose": true,
+  "delay": "2000",
+  "events": {
+    "restart":
+      "osascript -e 'display notification \"Changed: '$FILENAME'\" with title \"Nodemon\"'"
+  },
+  "watch": ["src/server", "webpack/"],
+  "ext": "js json"
+}

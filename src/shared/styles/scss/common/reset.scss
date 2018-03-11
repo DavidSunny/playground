@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+
+@charset "UTF-8";
+
+/*====================================================
+    Reset Browser default styles
+    - Path: styles/scss/common/_reset.scss
+====================================================*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+img {
+  border: 0 none;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+  font-size: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/// 뷰트 변환시 폰트크기 자동확대 방지 ///
+body {
+  -webkit-text-size-adjust: none;
+}
+
+input:checked[type='checkbox'] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+input[type='search'],
+input[type='tel'],
+input[type='number'],
+input[type='email'],
+input[type='button'],
+input[type='reset'] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  border: 0 none;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/// 안드로이드 4.1 하위 파폭대응 ///
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+/// color 값은 디자인가이드에 맞게사용 ///
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: helvetica, AppleSDGothicNeo, 'Malgun Gothic', '맑은 고딕',
+    sans-serif;
+  color: #262626;
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+/// Global Classes ///
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+/// 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 ///
+.screen-out {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.ir-caption {
+  overflow: hidden;
+  width: 1px;
+  font-size: 1px;
+  line-height: 0;
+  text-indent: -9999px;
+}
